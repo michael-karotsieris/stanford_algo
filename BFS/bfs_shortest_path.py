@@ -1,6 +1,6 @@
 
 
-def bfs(G , S , V):# graph = G , start_vertex = s , supose G is a dictionary
+def bfs_shortest_path(G , S , V):# graph = G , start_vertex = s , supose G is a dictionary
 	graph_queue = [S]
 	visited = []
 	dist = {}
@@ -21,4 +21,4 @@ def bfs(G , S , V):# graph = G , start_vertex = s , supose G is a dictionary
 					
 					
 
-print bfs({1:[2,3] , 2:[1,3,4,5] , 3:[1,2,4] , 4:[2,3] , 5:[2,6] , 6:[5] , 7:[]} , 4 , 7)
+print bfs_shortest_path({1:[2,3] , 2:[1,3,4,5] , 3:[1,2,4] , 4:[2,3] , 5:[2,6] , 6:[5] , 7:[]} , 4 , 7)
